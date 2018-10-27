@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="TBotApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TBotApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Image Name="ControllerImage" HorizontalAlignment="Left" Height="900" Margin="60,0,0,0" VerticalAlignment="Center" Width="900" Source="../Assets/XboxController.jpeg"/>
+        <TextBlock Name="LeftStickX" HorizontalAlignment="Left" Margin="10,325,0,0" Text="LeftStickX: " TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBlock Name="LeftStickY" HorizontalAlignment="Left" Margin="10,350,0,0" Text="LeftStickY: " TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+
+        <TextBlock Name="RightStickX" HorizontalAlignment="Left" Margin="618,700,0,0" Text="RightStickX: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Name="RightStickY" HorizontalAlignment="Left" Margin="618,720,0,0" Text="RightStickY: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+        <TextBlock Name="DPAD" HorizontalAlignment="Left" Margin="370,684,0,0" Text="DPAD: " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.967,-1"/>
+
+        <TextBlock Name="Buttons" HorizontalAlignment="Left" Margin="869,390,0,0" Text="Buttons: " TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.967,-1"/>
+        <Button Name="ControllerConnect" Content="Connect Controller" HorizontalAlignment="Left" Margin="437,68,0,0" VerticalAlignment="Top" Click="ControllerConnect_Click"/>
+        <TextBlock Name="tbConnected" HorizontalAlignment="Left" Margin="400,125,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" TextAlignment="Center"/>
+
+        <TextBlock Name="errorStatus" HorizontalAlignment="Left" Margin="1110,0,0,0" Text="Error Status" TextWrapping="Wrap" VerticalAlignment="Center" Width="215" TextAlignment="Center"/>
+        <TextBlock Name="messagesent"  HorizontalAlignment="Left" Margin="1110,555,0,0" Text="Message Sent" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" TextAlignment="Center"/>
+        <TextBlock Name="message"  HorizontalAlignment="Left" Margin="1110,580,0,0" Text="Message" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" TextAlignment="Center"/>
+        <Button Name="ReceiveData" Content="Receive Data" HorizontalAlignment="Left" Margin="1215,300,0,0" VerticalAlignment="Top"/>
+        <Button Name="SendData" Content="Send Data" HorizontalAlignment="Left" Margin="1215,348,0,0" VerticalAlignment="Top"/>
+        <Button Name="ConnectDevice" Content="Connect Bluetooth" HorizontalAlignment="Left" Margin="1215,245,0,0" VerticalAlignment="Top" Click="ConnectDevice_Click"/>
+
+    </Grid>
+</Page>
